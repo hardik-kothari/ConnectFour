@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GridBoardView" customModule="ConnectFour" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qY-z1-zQt">
+                    <rect key="frame" x="15" y="15" width="570" height="570"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPx-a1-oiA">
+                            <rect key="frame" x="10" y="49" width="550" height="472"/>
+                            <subviews>
+                                <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RN5-gF-kOn" userLabel="Column 1">
+                                    <rect key="frame" x="0.0" y="0.0" width="79" height="472"/>
+                                    <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTp-oG-lIY" userLabel="Column 2">
+                                    <rect key="frame" x="79" y="0.0" width="78" height="472"/>
+                                    <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <view tag="102" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGk-09-NHR" userLabel="Column 3">
+                                    <rect key="frame" x="157" y="0.0" width="79" height="472"/>
+                                    <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <view tag="103" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-qW-tD2" userLabel="Column 4">
+                                    <rect key="frame" x="236" y="0.0" width="78" height="472"/>
+                                    <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <view tag="104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4v-wS-jHC" userLabel="Column 5">
+                                    <rect key="frame" x="314" y="0.0" width="79" height="472"/>
+                                    <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <view tag="105" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vtV-ov-7zA" userLabel="Column 6">
+                                    <rect key="frame" x="393" y="0.0" width="78" height="472"/>
+                                    <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <view tag="106" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQa-js-6Pt" userLabel="Column 7">
+                                    <rect key="frame" x="471" y="0.0" width="79" height="472"/>
+                                    <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="RN5-gF-kOn" firstAttribute="width" secondItem="FTp-oG-lIY" secondAttribute="width" id="5xo-bd-5Mm"/>
+                                <constraint firstItem="vtV-ov-7zA" firstAttribute="width" secondItem="QQa-js-6Pt" secondAttribute="width" id="HCN-jS-lyv"/>
+                                <constraint firstItem="eGk-09-NHR" firstAttribute="width" secondItem="Xoz-qW-tD2" secondAttribute="width" id="IJ6-qE-sCv"/>
+                                <constraint firstItem="FTp-oG-lIY" firstAttribute="width" secondItem="eGk-09-NHR" secondAttribute="width" id="RL8-vd-j9B"/>
+                                <constraint firstItem="Xoz-qW-tD2" firstAttribute="width" secondItem="a4v-wS-jHC" secondAttribute="width" id="jwC-mZ-59C"/>
+                                <constraint firstItem="a4v-wS-jHC" firstAttribute="width" secondItem="vtV-ov-7zA" secondAttribute="width" id="kNN-zI-mfy"/>
+                            </constraints>
+                        </stackView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid_board" translatesAutoresizingMaskIntoConstraints="NO" id="nuR-PS-JKs">
+                            <rect key="frame" x="10" y="49" width="550" height="472"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="nuR-PS-JKs" secondAttribute="height" multiplier="7:6" id="fbE-wS-kxT"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.58431372549019611" green="0.5725490196078431" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="9qY-z1-zQt" secondAttribute="height" multiplier="1:1" id="Uu7-at-l5g"/>
+                        <constraint firstAttribute="trailing" secondItem="nuR-PS-JKs" secondAttribute="trailing" constant="10" id="fDY-In-HpI"/>
+                        <constraint firstItem="LPx-a1-oiA" firstAttribute="bottom" secondItem="nuR-PS-JKs" secondAttribute="bottom" id="gb1-rO-JJf"/>
+                        <constraint firstItem="LPx-a1-oiA" firstAttribute="trailing" secondItem="nuR-PS-JKs" secondAttribute="trailing" id="hjG-4w-mpB"/>
+                        <constraint firstItem="LPx-a1-oiA" firstAttribute="leading" secondItem="nuR-PS-JKs" secondAttribute="leading" id="klS-UW-Eua"/>
+                        <constraint firstItem="LPx-a1-oiA" firstAttribute="top" secondItem="nuR-PS-JKs" secondAttribute="top" id="pOQ-oO-KL5"/>
+                        <constraint firstItem="nuR-PS-JKs" firstAttribute="leading" secondItem="9qY-z1-zQt" secondAttribute="leading" constant="10" id="qbP-9h-bMe"/>
+                        <constraint firstItem="nuR-PS-JKs" firstAttribute="centerY" secondItem="9qY-z1-zQt" secondAttribute="centerY" id="xN4-zv-sqJ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="9qY-z1-zQt" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.95" id="10w-Oo-k9G"/>
+                <constraint firstItem="9qY-z1-zQt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Tip-0y-erT"/>
+                <constraint firstItem="9qY-z1-zQt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jcK-wI-kWu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="vwColumn1" destination="RN5-gF-kOn" id="ayM-fN-Deh"/>
+                <outlet property="vwColumn2" destination="FTp-oG-lIY" id="UwD-XT-Skk"/>
+                <outlet property="vwColumn3" destination="eGk-09-NHR" id="6FQ-pG-VXn"/>
+                <outlet property="vwColumn4" destination="Xoz-qW-tD2" id="qEz-Pu-UZ5"/>
+                <outlet property="vwColumn5" destination="a4v-wS-jHC" id="2wN-Da-cdg"/>
+                <outlet property="vwColumn6" destination="vtV-ov-7zA" id="6B3-tq-JHJ"/>
+                <outlet property="vwColumn7" destination="QQa-js-6Pt" id="zVL-lO-ZeE"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="grid_board" width="400" height="343"/>
+    </resources>
+</document>
