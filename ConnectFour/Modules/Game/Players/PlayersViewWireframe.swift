@@ -17,7 +17,9 @@ final class PlayersViewWireframe {
     init() {
         let xib = UINib(nibName: "PlayersView", bundle: nil)
         let array:[Any] = xib.instantiate(withOwner: nil, options: nil)
-        moduleView = array.first as! PlayersView
+        if let module = array.first as? PlayersView {
+            moduleView = module
+        }
 
         let interactor = PlayersViewInteractor()
         let presenter = PlayersViewPresenter(wireframe: self, view: moduleView, interactor: interactor)

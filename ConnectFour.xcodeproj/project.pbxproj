@@ -7,17 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03EBD039396A4DD16EA9AACD /* Pods_ConnectFour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7CAC9CC6D27D33E44C73D6A /* Pods_ConnectFour.framework */; };
 		5664E8E42142B42A00E8FB77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5664E8E22142B42A00E8FB77 /* Main.storyboard */; };
 		5664E8E62142B42B00E8FB77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5664E8E52142B42B00E8FB77 /* Assets.xcassets */; };
 		5664E8E92142B42B00E8FB77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5664E8E72142B42B00E8FB77 /* LaunchScreen.storyboard */; };
 		5664E8F42142B42B00E8FB77 /* ConnectFourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664E8F32142B42B00E8FB77 /* ConnectFourTests.swift */; };
 		5664E8FF2142B42B00E8FB77 /* ConnectFourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664E8FE2142B42B00E8FB77 /* ConnectFourUITests.swift */; };
 		5664E9162142BC9900E8FB77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664E9122142BC9900E8FB77 /* AppDelegate.swift */; };
-		5664E91C2142BFB400E8FB77 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664E91B2142BFB400E8FB77 /* NetworkManager.swift */; };
-		5664E91E2142C18C00E8FB77 /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664E91D2142C18C00E8FB77 /* NetworkConfiguration.swift */; };
 		5664E9232142C3AF00E8FB77 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664E9212142C3AF00E8FB77 /* Enums.swift */; };
-		5664E9262142C54F00E8FB77 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664E9252142C54F00E8FB77 /* ConfigurationService.swift */; };
 		5664E9282142C66E00E8FB77 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664E9272142C66E00E8FB77 /* Player.swift */; };
 		5664E9342142E20D00E8FB77 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664E9332142E20D00E8FB77 /* GameViewController.swift */; };
 		5664E9442142ECAD00E8FB77 /* PlayersViewInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664E93F2142ECAD00E8FB77 /* PlayersViewInterfaces.swift */; };
@@ -33,7 +29,6 @@
 		569D94962143941900475067 /* GridBoardWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569D94912143941900475067 /* GridBoardWireframe.swift */; };
 		569D94982143955700475067 /* GridBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569D94972143955700475067 /* GridBoardView.xib */; };
 		56D7BF7121475498004BDD73 /* GameWinCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D7BF7021475498004BDD73 /* GameWinCheckTests.swift */; };
-		56D7BF7321477F8C004BDD73 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D7BF7221477F8C004BDD73 /* UIViewController+Extension.swift */; };
 		56DFA01721462C4C00AFE8B7 /* GameWinChacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DFA01621462C4C00AFE8B7 /* GameWinChacker.swift */; };
 		56DFA0192146404B00AFE8B7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DFA0182146404B00AFE8B7 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -56,7 +51,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		503B6C884B8E383000066530 /* Pods-ConnectFour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectFour.debug.xcconfig"; path = "Target Support Files/Pods-ConnectFour/Pods-ConnectFour.debug.xcconfig"; sourceTree = "<group>"; };
 		5664E8DB2142B42A00E8FB77 /* ConnectFour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectFour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5664E8E32142B42A00E8FB77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5664E8E52142B42B00E8FB77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,10 +63,7 @@
 		5664E9002142B42B00E8FB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5664E9122142BC9900E8FB77 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5664E9132142BC9900E8FB77 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5664E91B2142BFB400E8FB77 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		5664E91D2142C18C00E8FB77 /* NetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
 		5664E9212142C3AF00E8FB77 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		5664E9252142C54F00E8FB77 /* ConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
 		5664E9272142C66E00E8FB77 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		5664E9332142E20D00E8FB77 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		5664E93F2142ECAD00E8FB77 /* PlayersViewInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewInterfaces.swift; sourceTree = "<group>"; };
@@ -88,11 +79,8 @@
 		569D94912143941900475067 /* GridBoardWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridBoardWireframe.swift; sourceTree = "<group>"; };
 		569D94972143955700475067 /* GridBoardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridBoardView.xib; sourceTree = "<group>"; };
 		56D7BF7021475498004BDD73 /* GameWinCheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWinCheckTests.swift; sourceTree = "<group>"; };
-		56D7BF7221477F8C004BDD73 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		56DFA01621462C4C00AFE8B7 /* GameWinChacker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWinChacker.swift; sourceTree = "<group>"; };
 		56DFA0182146404B00AFE8B7 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		A7CAC9CC6D27D33E44C73D6A /* Pods_ConnectFour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnectFour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED54C23D5C882B1C70B68D66 /* Pods-ConnectFour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectFour.release.xcconfig"; path = "Target Support Files/Pods-ConnectFour/Pods-ConnectFour.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +88,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03EBD039396A4DD16EA9AACD /* Pods_ConnectFour.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,14 +108,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		38368BC96F2A5721E4EEFC14 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A7CAC9CC6D27D33E44C73D6A /* Pods_ConnectFour.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5664E8D22142B42A00E8FB77 = {
 			isa = PBXGroup;
 			children = (
@@ -136,8 +115,6 @@
 				5664E8F22142B42B00E8FB77 /* ConnectFourTests */,
 				5664E8FD2142B42B00E8FB77 /* ConnectFourUITests */,
 				5664E8DC2142B42A00E8FB77 /* Products */,
-				B6BB4AD89C500858E392A7B2 /* Pods */,
-				38368BC96F2A5721E4EEFC14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,7 +133,6 @@
 			children = (
 				5664E9112142BC9900E8FB77 /* Application */,
 				5664E9242142C46200E8FB77 /* Entities */,
-				5664E9152142BC9900E8FB77 /* Managers */,
 				5664E90D2142BC9900E8FB77 /* Modules */,
 				5664E90C2142BC9900E8FB77 /* Services */,
 				5664E91F2142C3AF00E8FB77 /* Utility */,
@@ -189,7 +165,6 @@
 		5664E90C2142BC9900E8FB77 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				5664E9252142C54F00E8FB77 /* ConfigurationService.swift */,
 				56DFA01621462C4C00AFE8B7 /* GameWinChacker.swift */,
 			);
 			path = Services;
@@ -247,15 +222,6 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		5664E9152142BC9900E8FB77 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				5664E91B2142BFB400E8FB77 /* NetworkManager.swift */,
-				5664E91D2142C18C00E8FB77 /* NetworkConfiguration.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
 		5664E91F2142C3AF00E8FB77 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,7 +245,6 @@
 			children = (
 				5664E94B214308DB00E8FB77 /* UIColor+Extension.swift */,
 				56DFA0182146404B00AFE8B7 /* UIView+Extension.swift */,
-				56D7BF7221477F8C004BDD73 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,15 +258,6 @@
 			path = ConnectFour/Entities;
 			sourceTree = SOURCE_ROOT;
 		};
-		B6BB4AD89C500858E392A7B2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				503B6C884B8E383000066530 /* Pods-ConnectFour.debug.xcconfig */,
-				ED54C23D5C882B1C70B68D66 /* Pods-ConnectFour.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -309,11 +265,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5664E9032142B42B00E8FB77 /* Build configuration list for PBXNativeTarget "ConnectFour" */;
 			buildPhases = (
-				563A4702640B5D274F440809 /* [CP] Check Pods Manifest.lock */,
 				5664E8D72142B42A00E8FB77 /* Sources */,
 				5664E8D82142B42A00E8FB77 /* Frameworks */,
 				5664E8D92142B42A00E8FB77 /* Resources */,
-				5A7B8EC192C27BE7B450084D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -372,13 +326,16 @@
 				TargetAttributes = {
 					5664E8DA2142B42A00E8FB77 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1030;
 					};
 					5664E8EE2142B42B00E8FB77 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1030;
 						TestTargetID = 5664E8DA2142B42A00E8FB77;
 					};
 					5664E8F92142B42B00E8FB77 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1030;
 						TestTargetID = 5664E8DA2142B42A00E8FB77;
 					};
 				};
@@ -432,65 +389,17 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		563A4702640B5D274F440809 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ConnectFour-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5A7B8EC192C27BE7B450084D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ConnectFour/Pods-ConnectFour-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConnectFour/Pods-ConnectFour-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		5664E8D72142B42A00E8FB77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5664E9342142E20D00E8FB77 /* GameViewController.swift in Sources */,
-				5664E9262142C54F00E8FB77 /* ConfigurationService.swift in Sources */,
 				5664E9482142ECAD00E8FB77 /* PlayersViewWireframe.swift in Sources */,
-				5664E91C2142BFB400E8FB77 /* NetworkManager.swift in Sources */,
 				56DFA01721462C4C00AFE8B7 /* GameWinChacker.swift in Sources */,
 				569D94932143941900475067 /* GridBoardPresenter.swift in Sources */,
 				569D94942143941900475067 /* GridBoardView.swift in Sources */,
 				5664E9162142BC9900E8FB77 /* AppDelegate.swift in Sources */,
-				56D7BF7321477F8C004BDD73 /* UIViewController+Extension.swift in Sources */,
 				5664E9462142ECAD00E8FB77 /* PlayersView.swift in Sources */,
 				569D94962143941900475067 /* GridBoardWireframe.swift in Sources */,
 				5664E9452142ECAD00E8FB77 /* PlayersViewPresenter.swift in Sources */,
@@ -501,7 +410,6 @@
 				569D94922143941900475067 /* GridBoardInterfaces.swift in Sources */,
 				5664E94C214308DB00E8FB77 /* UIColor+Extension.swift in Sources */,
 				5664E9282142C66E00E8FB77 /* Player.swift in Sources */,
-				5664E91E2142C18C00E8FB77 /* NetworkConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,7 +581,6 @@
 		};
 		5664E9042142B42B00E8FB77 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 503B6C884B8E383000066530 /* Pods-ConnectFour.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -684,14 +591,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hardik.connectfour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		5664E9052142B42B00E8FB77 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED54C23D5C882B1C70B68D66 /* Pods-ConnectFour.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -702,7 +608,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hardik.connectfour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -721,7 +627,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hk.ConnectFourTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConnectFour.app/ConnectFour";
 			};
@@ -741,7 +647,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hk.ConnectFourTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConnectFour.app/ConnectFour";
 			};
@@ -760,7 +666,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hk.ConnectFourUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ConnectFour;
 			};
@@ -779,7 +685,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hk.ConnectFourUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ConnectFour;
 			};

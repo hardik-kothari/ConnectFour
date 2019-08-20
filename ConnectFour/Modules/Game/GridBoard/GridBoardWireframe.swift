@@ -17,7 +17,7 @@ final class GridBoardWireframe {
     init(players: (player1: Player, player2: Player)) {
         let xib = UINib(nibName: "GridBoardView", bundle: nil)
         let array:[Any] = xib.instantiate(withOwner: nil, options: nil)
-        moduleView = array.first as! GridBoardView
+        moduleView = array.first as? GridBoardView
         
         let presenter = GridBoardPresenter(wireframe: self, view: moduleView, players: players)
         moduleView.presenter = presenter

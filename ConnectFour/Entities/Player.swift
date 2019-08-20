@@ -9,8 +9,15 @@
 import UIKit
 
 class Player: NSObject {
-    var id: Int!
-    var name: String!
-    var color: String!
+    let id: Int
+    var name: String
+    let color: String
     var isBot: Bool = false
+    
+    init(id: Int, name: String, color: String, isBot: Bool) {
+        self.id = id
+        self.name = name
+        self.color = color
+        self.isBot = isBot
+    }
 }

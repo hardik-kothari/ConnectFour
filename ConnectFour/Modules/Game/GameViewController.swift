@@ -21,7 +21,6 @@ class GameViewController: UIViewController {
     // MARK: - Life cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        showProgressView()
         playersViewModule.moduleView.frame = vwPlayersInfo.bounds
         playersViewModule.moduleView.alpha = 0
         vwPlayersInfo.addSubview(playersViewModule.moduleView)
@@ -49,6 +48,7 @@ class GameViewController: UIViewController {
         if let players = notification.object as? (player1: Player, player2: Player) {
             playersViewModule.moduleView.alpha = 1
             if tabBarController?.selectedIndex == 1 {
+                players.player2.name = "Bot"
                 players.player2.isBot = true
             }
             gridBoardViewModule = GridBoardWireframe(players: players)
@@ -56,29 +56,26 @@ class GameViewController: UIViewController {
             vwGridBoard.addSubview(gridBoardViewModule.moduleView)
         }
         if let error = notification.object as? Error {
-            let alert = UIAlertController(title: "Connect Four", message: error.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
+            let alert = UIAlertController(title: "Connect Four", message: error.localizedDescription, preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
-        hideProgressView()
     }
     
     @objc func didFinishGame(_ notification: Notification) {
         var winTitle: String = "Game Over"
         let winMessage: String = "Would you like to play again?"
         if let winner = notification.object as? Player {
-            winTitle = "\(winner.name!) wins!"
+            winTitle = "\(winner.name) wins!"
         }
-        let alert = UIAlertController(title: winTitle, message: winMessage, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: winTitle, message: winMessage, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Play Again", style: .default, handler: { action in
             switch action.style {
             case .default:
                 self.gridBoardViewModule.resetGame()
-            case .cancel:
-                print("cancel")
-            case .destructive:
-                print("destructive")
-        }}))
+            default:
+                break
+            }}))
         self.present(alert, animated: true, completion: nil)
     }
     
